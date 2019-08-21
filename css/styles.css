@@ -577,12 +577,12 @@ a .circle:visited{
     background-size: cover;
 }
 
-.bottles-img-container {
+.about-img-container {
     margin: 0 auto 50px auto;
     position: relative;
     text-align: center;
     min-height: 400px;
-    background-image: url('../images/bottles-cropped.jpg');
+    background-image: url('../images/plains-truck.jpeg');
     background-size: cover;
 }
 
@@ -913,6 +913,7 @@ span {
 
 #copyright {
     font-family: 'Lato', sans-serif;
+    color: #383838;
 }
 
 /*Office Address*/
