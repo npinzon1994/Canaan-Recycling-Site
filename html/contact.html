@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Canaan Recycling - Contact Us</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript">
+        var onloadCallback = function() {
+            alert("grecaptcha is ready!");
+        };
+    </script>
+
+    <link rel="icon" href="../images/cr-logo-title.png">
+    <!-- <link rel="stylesheet" media="screen and (min-width: 100px) and (max-width: 380px)" type="text/css" href="styles/mobileStyleSheet.css"> -->
+    <link rel="stylesheet" type="text/css"
+          href="../css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../scripts/dropdown.js"></script>
+
+</head>
+
+<body>
+
+<!-- Contains entire page -->
+<div class="header-wrapper">
+    <div class="nav-header">
+        <div class="nav-logo-div">
+            <a href="../index.html"><img src="../images/cr-logo-300.png" alt="Company Logo"></a>
+        </div>
+
+        <label for="toggle">&#8801;</label>
+        <input type="checkbox" id="toggle"/>
+
+        <ul class="navbar-nav">
+            <li><a href="../html/about.html">ABOUT</a></li>
+            <li><a href="../html/services.html">SERVICES</a></li>
+            <li><a href="../html/contact.html">CONTACT</a></li>
+            <li>
+                <!--<a href="http://www.canaanxpress.com" target="_blank">SISTER COMPANIES</a>-->
+                <div class="dropdown">
+                    <button class="dropbtn" onClick="myFunction()">SISTER COMPANIES </button>
+
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="http://www.canaanxpress.com" target="_blank">CANAAN XPRESS</a>
+                        <a href="http://www.millenniumfibers.com" target="_blank">MILLENNIUM FIBERS</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div id="page-container">
+    <div id="main">
+
+        <div class="column-div" style="margin-bottom: 100px; margin-top: 100px; ">
+            <h1 style="font-family: 'Quicksand', sans-serif;">Meet the Team!</h1>
+            <hr style="width: 200px;">
+            <div class="column">
+            <h3>Jimmy Cheng</h3>
+            <a class="circle-link"><img class="circle" src="../images/jimmy-photo.jpg"></a>
+            <p style="color: #383838;">President</p>
+            <a href="mailto:jimmy@canaanxpress.com" target="_blank" class="email-btn" style="width: 200px;
+            margin: auto;">Email</a>
+        </div><div class="column">
+            <h3>Darrell Cheng</h3>
+            <a class="circle-link"><img class="circle" src="../images/darrell-photo.jpg"></a>
+            <p style="color: #383838;">Manager/Sales</p>
+            <a href="mailto:darrell@canaanxpress.com" target="_blank" class="email-btn" style="width: 200px;
+            margin: auto;">Email</a>
+        </div><div class="column">
+            <h3>Selina Lam</h3>
+            <a class="circle-link"><img class="circle" src="../images/profile-placeholder.jpg"></a>
+            <p style="color: #383838;">Recycling Manager</p>
+            <a href="mailto:selina@canaanrecycling.com" target="_blank" class="email-btn" style="width: 200px;
+            margin: auto;">Email</a>
+        </div>
+        </div>
+
+        <div class="column-div" id="column-div-id" style="background: #e8e8e8; position:relative; margin-top: 40px; max-width: 100%; padding-top: 10px;">
+            <h1 style="font-family: 'Quicksand', sans-serif; font-size: 38px; margin-top: 40px; text-align: center;">Contact Us</h1>
+            <hr style="width: 150px;">
+            <div class="column" id="column-id">
+                <h2 style="color: #96BD2C; font-family: 'Quicksand', sans-serif;">New York Office</h2>
+                <hr style="width: 80%; color: #e8e8e8; margin-bottom: 30px;">
+                <p style="line-height: 40px; margin-bottom: 0; color: #fff;">60 S. Franklin Ave</p>
+                <p style="line-height: 40px; margin-bottom: 25px; margin-top: 0; color: #fff;">Valley Stream, NY 11580</p>
+                <div class="phone-fax-container">
+                    <img class="icon" src="../images/phone-icon.png" alt="phone icon">
+                    <a href="tel:5168872940" class="phone-num">(516) 887-2940</a>
+                </div>
+                <div class="phone-fax-container" style="margin-bottom: 50px;">
+                    <img class="icon" src="../images/fax-icon.png" alt="fax icon" style="height: 40px; width: 40px;">
+                    <a href="tel:9737104654" class="phone-num">(973) 710-4654</a>
+                </div>
+                <a class="directions-btn" target="_blank" href="https://www.google.com/maps/place/60+S+Franklin+Ave,+Valley+Stream,+NY+11580/@40.6635555,-73.7044431,17z/data=!3m1!4b1!4m5!3m4!1s0x89c26462f2a51563:0xf00cf1c3bdb39b58!8m2!3d40.6635555!4d-73.7022491">Get Directions</a>
+            </div>
+
+            <form action="../scripts/contactForm_handler.php" id="contactForm" method="post">
+                <!-- within your existing form add this field -->
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="company" placeholder="Company"> <br>
+                <input type="text" name="email" placeholder="Email" required>
+                <input type="text" name="phone" placeholder="Phone (no special characters)"> <br>
+
+                <textarea name="message" placeholder="Type your message here"></textarea> <br>
+                <div class="g-recaptcha" data-sitekey="6LeYDqsUAAAAAHAF92vlWWUil6fDjvC7BjEXufz8"></div>
+
+                <div style="text-align: left; margin-left: 18px; margin-top: 12px;">
+                    <button type="submit" style="margin: 10px 10px 20px 0;">Submit</button>
+                    <button type="reset" style="margin: 10px 10px 20px 10px;">Reset</button>
+                </div>
+            </form>
+
+
+        </div>
+        </div>
+
+        <div class="footer-div">
+
+            <div style="">
+                <img src="../images/cr-footer-logo-300.png" alt="Company Logo 2" id="footer-img">
+                <p class="address">Phone: (516) 887-2940</p>
+                <p class="address">Fax: (973) 710-4654 </p>
+                <p class="address">60 S. Franklin Ave. Valley Stream, NY 11580</p>
+                <a id="copyright" style="font-size: 16px;" href="http://www.nickpinzon.com" target="_blank">&#xA9; 2019&nbsp;&nbsp;&nbsp;nickpinzon.com</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>
